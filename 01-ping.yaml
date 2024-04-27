@@ -1,0 +1,5 @@
+- name: ping the server
+  hosts: web   #it wil go to the invetory file and ping all the remote servers under [web]
+  tasks: #list of tasks/modules/collections
+  - name: pinging the server
+    ansible.builtin.ping:
