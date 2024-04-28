@@ -1,7 +1,7 @@
 - name: variables
   hosts: localhost
   vars: # var diclaration
-    course: "aws"
+    course: "terraform"
     trainer: "shiva kumar"
     duration: "10hrs"
   tasks:
