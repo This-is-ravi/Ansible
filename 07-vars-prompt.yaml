@@ -1,12 +1,12 @@
 - name: variables from prompt
   hosts: localhost
-  vars_prompt:
+  vars_prompt:  #prompt is used to store the confidential info
   - name: USERNAME
     prompt: Please enter your username
     private: false
   - name: PASSWORD
     prompt: Please enter your password
-    private: true
+    private: true  # u cant see the pwd while entering
   tasks:
   - name: print information
     ansible.builtin.debug:
