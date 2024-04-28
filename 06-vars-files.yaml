@@ -1,10 +1,8 @@
 - name: variable from files
   hosts: localhost
   vars_files:
-   - vars.yaml
+   - vars.yaml  #it wil read the variables from vars.yaml file 
   tasks:
     - name: print override info
-      vars:  # task level var
-        course: "devops"
       ansible.builtin.debug:
         msg: "hi iam learning course {{course}} from trainer {{trainer}},duration {{duration}}"
