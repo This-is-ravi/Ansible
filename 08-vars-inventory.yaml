@@ -1,4 +1,4 @@
-- name: variables from inventory
+- name: variables from inventory  # passing var through inventory
   hosts: localhost
   tasks:
   - name: print information
