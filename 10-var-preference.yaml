@@ -8,8 +8,8 @@
    - name: wishes
      prompt: "please enter wishes"
      private: false 
-   tasks:
-   - name: check preference
+  tasks:
+  - name: check preference
        vars:
          WISHES: "Morning from TASK variable"
      ansible.builtin.debug:
