@@ -5,11 +5,11 @@
   - name: install packages
     ansible.builtin.dnf:  # dnf to install packages
       name: "{{item.state}}"
-      state: latest
+      state: "{{item.state}}"
     loop:
     - {name: 'mysql', state: 'latest'} # item
-    - {name: 'mysql', state: 'remove'}
-    - {name: 'mysql', state: 'remove'}
+    - {name: 'nginx', state: 'remove'}
+    - {name: 'postfix', state: 'absent'}
      
 
 
