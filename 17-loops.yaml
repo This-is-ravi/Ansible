@@ -4,12 +4,12 @@
   tasks:
   - name: install packages
     ansible.builtin.dnf:  # dnf to install packages
-      name: "{{item}}"
+      name: "{{item.state}}"
       state: latest
     loop:
-    - mysql  # to remove this  
-    - nginx  # to install ths go 17
-    - postfix
+    - {name: 'mysql', state: 'latest'} # item
+    - {name: 'mysql', state: 'remove'}
+    - {name: 'mysql', state: 'remove'}
      
 
 
